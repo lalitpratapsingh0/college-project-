@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Doctor Demo — BuccalCare AI</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="doctor"><div id="site-header"></div>
+<main class="container page"><div class="page-title"><div><div class="eyebrow">DOCTOR DEMONSTRATION</div><h1>Sample Clinical Review</h1><p>Fictional interface for demonstrating documentation after screening.</p></div><span class="pill">DEMO ONLY</span></div>
+<div class="doctor-grid"><section class="panel form-panel"><h2>Review Details</h2><p class="muted">Use fictional information only.</p>
+<div class="form-grid">
+<label>Doctor Name<input id="doctorName" value="Dr. Ananya Sharma"></label><label>Qualification<input id="qualification" value="BDS, MDS — Oral Medicine"></label>
+<label>Registration Number<input id="registration" value="DEMO-000000"></label><label>Patient Name<input id="patientName" value="Demo Patient"></label>
+<label>Patient Age<input id="patientAge" type="number" value="32"></label><label>Patient Gender<select id="gender"><option>Male</option><option>Female</option><option>Other</option></select></label>
+<label>Date<input id="date" type="date"></label><label>Screening Result<select id="screeningResult"><option>HIGH-RISK / SUSPICIOUS</option><option>LOW-RISK / NO SUSPICIOUS PATTERN DETECTED</option><option>UNABLE TO ANALYZE</option></select></label>
+<label class="full">Clinical Notes<textarea id="notes">Fictional clinical demonstration note. Professional examination is recommended.</textarea></label>
+<label class="full">Recommendations<textarea id="recommendations">Consult a qualified dental/oral-health professional for clinical evaluation. This prototype does not diagnose disease.</textarea></label>
+<label>Follow-up Date<input id="followup" type="date"></label>
+</div><button class="btn primary big" id="generateRx">Generate Demo Prescription</button></section>
+<section id="prescriptionPreview" class="prescription-wrap"><div class="empty-prescription"><div class="round-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></div><h2>Your demo document will appear here</h2><p>Generate a sample report and use Print / Save as PDF.</p></div></section></div>
+<div class="disclaimer"><b>DEMO / SAMPLE — NOT A VALID MEDICAL PRESCRIPTION</b><br>This fictional document is for college demonstration only.</div>
+</main><div id="site-footer"></div><script src="script.js"></script><script src="doctor-demo.js"></script></body></html>

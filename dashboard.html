@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dashboard — BuccalCare AI</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="dashboard"><div id="site-header"></div>
+<main class="container page"><div class="page-title"><div><div class="eyebrow">PRESENTATION DASHBOARD</div><h1>Screening Overview</h1><p>Live statistics calculated from local demo history.</p></div><span class="pill">Academic Analytics</span></div>
+<div class="stats"><div class="stat"><small>Total Demo Screenings</small><b id="total">0</b><span>All recorded runs</span></div><div class="stat"><small>Suspicious</small><b id="suspicious">0</b><span>Professional review recommended</span></div><div class="stat"><small>Low Risk</small><b id="low">0</b><span>No suspicious pattern detected</span></div><div class="stat"><small>Unable to Analyze</small><b id="unable">0</b><span>Image quality issue</span></div></div>
+<div class="dash-grid"><section class="panel"><div class="panel-title"><div><h2>Risk Distribution</h2><p>Based on demo history</p></div></div><div id="bars" class="bars"></div></section><section class="panel"><div class="panel-title"><div><h2>Recent Activity</h2><p>Latest screening runs</p></div></div><div id="activity"></div></section></div>
+<div class="disclaimer">Statistics are for academic presentation only. They do not represent clinical outcomes or patient data.</div></main>
+<div id="site-footer"></div><script src="script.js"></script><script src="dashboard.js"></script></body></html>

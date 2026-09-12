@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Screening — BuccalCare AI</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="screening"><div id="site-header"></div>
+<main class="container page">
+  <div class="page-title"><div><div class="eyebrow">AI SCREENING</div><h1>Capture or Upload an Image</h1><p>Use a clear photograph of the buccal/oral region for this academic demonstration.</p></div><span class="pill">Demo AI Mode</span></div>
+  <div class="screen-grid">
+    <section class="panel"><div class="panel-title"><span class="round-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></svg></span><div><h2>Upload Image</h2><p>JPG · JPEG · PNG · WEBP</p></div></div>
+      <label class="dropzone" id="dropzone" for="fileInput"><input id="fileInput" type="file" accept="image/jpeg,image/png,image/webp"><div class="upload-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></svg></div><h3>Upload a clear image of the buccal/oral region</h3><p>Drag & drop here or <u>browse files</u></p><small>Maximum 8 MB</small></label>
+      <div id="uploadPreview" class="preview hidden"></div>
+    </section>
+    <section class="panel camera-panel"><div class="panel-title"><span class="round-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h4l2-2h4l2 2h4a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.5"/></svg></span><div><h2>Use Camera</h2><p>Works in modern browsers with camera permission.</p></div></div>
+      <div class="camera-box"><video id="video" autoplay playsinline></video><div id="cameraPlaceholder">Camera preview will appear here</div><div class="camera-frame"></div></div>
+      <div class="camera-actions"><button class="btn secondary" id="openCamera">Open Camera</button><button class="btn primary" id="captureBtn" disabled>Capture Image</button><button class="btn ghost" id="closeCamera" disabled>Close</button></div>
+      <canvas id="canvas" class="hidden"></canvas><div id="capturePreview" class="preview hidden"></div>
+    </section>
+  </div>
+  <div id="qualityBox" class="quality hidden"></div>
+  <div class="analysis-actions"><button class="btn primary big" id="analyzeBtn" disabled>Analyze Image</button><a class="btn secondary big" href="index.html">Back Home</a></div>
+  <div class="disclaimer"><b>Demo AI Mode — For Academic Demonstration Only</b><br>This AI result is for educational screening purposes only and is not a medical diagnosis. Please consult a qualified dentist, oral surgeon, oral medicine specialist, or doctor for clinical evaluation.</div>
+</main>
+<div id="site-footer"></div><script src="script.js"></script><script src="screening.js"></script></body></html>
